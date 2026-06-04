@@ -1628,7 +1628,7 @@ p {
 
 @media (max-width: 450px) {
   .main__header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
