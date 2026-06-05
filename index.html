@@ -189,13 +189,13 @@
                         </div>
                         <div class="description">
                             <p class="hero__description">
-                                Снижает нагрузку на администратора.
+                                Снижает нагрузку на администратора
                             </p>
                             <p class="hero__description">
-                                Экономит деньги бизнеса.
+                                Экономит деньги бизнеса
                             </p>
                             <p class="hero__description">
-                                Работает на Windows и Linux.
+                                Работает на Windows и Linux
                             </p>
                         </div>
                         <div class="buttons buttons--hero">
@@ -232,17 +232,17 @@
                         <div
                             class="monitor__for__business-section monitor__for__business-section--title"
                         >
-                            <h2>Для ИТ-руководителя и бизнеса</h2>
+                            <h2 class="h2--monitor">Для ИТ-руководителя и бизнеса</h2>
                             <ul class="checkmark-list">
-                                <li class="checkmark-list__item">
+                                <li class="checkmark-list__item checkmark-list__item--monitor">
                                     Минимизация издержек от простоя критичных
                                     сервисов
                                 </li>
-                                <li class="checkmark-list__item">
+                                <li class="checkmark-list__item checkmark-list__item--monitor">
                                     Экономия ресурсов ИТ-отдела за счет
                                     автоматизации контроля
                                 </li>
-                                <li class="checkmark-list__item">
+                                <li class="checkmark-list__item checkmark-list__item--monitor">
                                     Прогнозируемость работы систем благодаря
                                     исторической аналитике
                                 </li>
@@ -256,17 +256,17 @@
                         <div
                             class="monitor__for__business-section monitor__for__business-section--title"
                         >
-                            <h2>Для администратора</h2>
+                            <h2 class="h2--monitor">Для администратора</h2>
                             <ul class="checkmark-list">
-                                <li class="checkmark-list__item">
+                                <li class="checkmark-list__item checkmark-list__item--monitor">
                                     Быстрый поиск тяжелых запросов без ручного
                                     разбора логов
                                 </li>
-                                <li class="checkmark-list__item">
+                                <li class="checkmark-list__item checkmark-list__item--monitor">
                                     Полный мониторинг «из коробки»: от дисковых
                                     массивов до таблиц блокировок
                                 </li>
-                                <li class="checkmark-list__item">
+                                <li class="checkmark-list__item checkmark-list__item--monitor">
                                     Уведомления об отклонениях, чтобы исправить
                                     все до того, как упадет сервер
                                 </li>
@@ -364,7 +364,7 @@
                 </div>
             </section>
             <section class="section">
-                <h1>Сильные стороны</h1>
+                <h1>Сильные стороны нашего решения</h1>
 
                 <div class="accordion-list">
                     <div class="accordion">
@@ -715,56 +715,60 @@
                         </div>
                     </div>
                     <div class="technicks technicks--systems">
+
                         <div class="technicks__item--systems">
                             <div class="technick__info-systems">
-                                <p>
-                                    Системные требования
-                                    <span style="color: red">Клиент</span>
+                                <p class="technick__title">
+                                    Системные требования <br>
+                                    <span style="color: rgba(204, 43, 36, 1);">Клиент</span>
                                 </p>
                             </div>
                             <ul class="checkmark-list checkmark-list--systems">
                                 <li
                                     class="checkmark-list__item checkmark-list__item--systems-CPU"
                                 >
-                                    Процессор <br />от 1 ядра
+                                <p>Процессор <br /> <span>от 1 ядра</span></p>
+
                                 </li>
                                 <li
                                     class="checkmark-list__item checkmark-list__item--systems-RAM"
                                 >
-                                    ОЗУ <br />от 512 Мб
+                                    <p>ОЗУ <br><span>от 512 Мб</span></p>
                                 </li>
                                 <li
                                     class="checkmark-list__item checkmark-list__item--systems-SSD"
                                 >
-                                    Диск <br />от 2 Гб
+                                    <p>Диск <br><span>от 2 Гб</span></p>
                                 </li>
                             </ul>
                         </div>
+                        <div class="technicks__item--line"></div>
                         <div class="technicks__item--systems">
                             <div class="technick__info-systems">
-                                <p>
+                                <p class="technick__title">
                                     Системные требования
-                                    <span style="color: red">Сервер</span>
+                                    <span style="color: rgba(204, 43, 36, 1);">Сервер</span>
                                 </p>
                             </div>
                             <ul class="checkmark-list checkmark-list--systems">
                                 <li
                                     class="checkmark-list__item checkmark-list__item--systems-CPU"
                                 >
-                                    Процессор <br />от 4 ядер
+                                    <p>Процессор <br><span>от 4 ядер</span></p>
                                 </li>
                                 <li
                                     class="checkmark-list__item checkmark-list__item--systems-RAM"
                                 >
-                                    ОЗУ <br />от 16 Гб
+                                    <p>ОЗУ <br><span>от 16 Гб</span></p>
                                 </li>
                                 <li
                                     class="checkmark-list__item checkmark-list__item--systems-SSD"
                                 >
-                                    Диск <br />от 64 Гб
+                                    <p>Диск <br><span>от 64 Гб</span></p>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -1507,8 +1511,10 @@
                                 Убедитесь лично — протестируйте интерфейс в
                                 действии
                             </h2>
-                            <button class="button--demo">
-                                Протестировать демо
+                            <button class="button--demo" onclick="testForm()">
+
+				Оставить заявку
+
                                 <svg
                                     width="24"
                                     height="24"

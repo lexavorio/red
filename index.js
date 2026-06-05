@@ -117,24 +117,37 @@ burger.addEventListener('click', () => {
 function buyForm() {
     const modal = document.getElementById('buyModal');
     modal.classList.add('active');
+    openForm()
 }
 
 function testForm() {
     const modal = document.getElementById('testModal');
     modal.classList.add('active');
+    openForm()
 }
 function knowForm() {
     const modal = document.getElementById('knowModal');
     modal.classList.add('active');
+    openForm()
 }
 function becomeBestForm() {
     const modal = document.getElementById('becomeBestModal');
     modal.classList.add('active');
+    openForm()
 }
 
 function closeForm(button) {
     const modal = button.closest('.modal');
     modal.classList.remove('active');
+
+    document
+        .querySelector('.main__header')
+        .classList.remove('modal-open');
+}
+
+function openForm() {
+    const modal = document.querySelector('.main__header')
+    modal.classList.add('modal-open');
 }
 
  function trust() {
