@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link rel="stylesheet" href="index.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -171,20 +172,24 @@
                             </h1>
                         </div>
 
-                        <div class="hero__media">
-                            <picture>
-                                <source
-                                    media="(max-width: 450px)"
-                                    class="hero__monitor--tel"
-                                    srcset="/img/media/media_tel.png"
-                                />
+                        <div class="hero__media hero__media--monitor">
 
                                 <img
                                     class="hero__monitor"
                                     src="/img/media/media_note.png"
                                     alt="Интерфейс РБД Монитор"
                                 />
-                            </picture>
+
+                        </div>
+                        <div class="hero__media hero__media--tel">
+                            <img
+                                    class="hero__monitor hero__monitor--tel"
+                                    srcset="/img/media/media_tel.png"
+                                >
+                                <img
+                                class="hero__back-tel"
+                                src="/img/phon/back_header-for-tel.png"
+                                alt="">
                         </div>
                         <div class="description">
                             <p class="hero__description">
