@@ -77,6 +77,9 @@ h3 {
   font-size: 24px;
 }
 
+.h3--use {
+  font-weight: 700;
+}
 @media (max-width: 450px) {
   .h3--use {
     display: none;
@@ -116,6 +119,11 @@ p {
 }
 
 .p--team {
+  text-align: center;
+}
+.p--team-title {
+  font-weight: 700;
+  font-size: 24px;
   text-align: center;
 }
 .p--carusel {
@@ -291,7 +299,7 @@ p {
 }
 .accordion:hover .accordion__title {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
 }
 .accordion:hover .accordion__body {
   opacity: 1;
@@ -350,9 +358,9 @@ p {
 .accordion__header-faq::before {
   content: "";
   flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  background-image: url("/img/icon/arrow-dawn.svg");
+  width: 20px;
+  height: 9px;
+  background-image: url("/img/icon/vector__questions.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -616,7 +624,6 @@ p {
 .img__position {
   position: relative;
   z-index: 2;
-  border: 1px solid rgb(231, 231, 231);
 }
 
 .plus.is-hidden {
@@ -764,7 +771,8 @@ p {
 }
 
 .carousel__pagination {
-  width: 200px;
+  width: 100%;
+  max-width: 118px;
   height: 6px;
   background: rgb(230, 230, 230);
   border-radius: 999px;
@@ -1032,6 +1040,9 @@ p {
   font-size: 16px;
   color: black;
 }
+.checkmark-list--road {
+  margin-left: -8px;
+}
 
 .checkmark-list__item {
   position: relative;
@@ -1051,6 +1062,9 @@ p {
   background-position: center;
   background-size: contain;
 }
+.checkmark-list__item--technick {
+  font-size: 16px;
+}
 .checkmark-list__item--monitor {
   font-size: 16px;
   left: -12px;
@@ -1061,6 +1075,9 @@ p {
 }
 .checkmark-list__item--roadmap::after {
   filter: brightness(0) invert(1);
+}
+.checkmark-list__item--roadmap-other {
+  font-size: 16px;
 }
 .checkmark-list__item--systems-CPU::after {
   width: 32px;
@@ -1305,6 +1322,7 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
   }
   .footer__copyright {
     margin: 0;
@@ -1905,7 +1923,8 @@ p {
   flex-shrink: 0;
   padding: 16px 24px;
   border: 1px solid #d9d9d9;
-  border-radius: 14px;
+  border-radius: 2px;
+  font-size: 18px;
   background: white;
   white-space: nowrap;
   text-align: center;
@@ -2086,6 +2105,8 @@ p {
 }
 
 .monitoring__table-wrapper {
+  width: 100%;
+  max-width: 1200px;
   position: relative;
   overflow: hidden;
   max-height: 490px;
@@ -2187,13 +2208,13 @@ p {
 }
 
 .table-icon img {
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   filter: brightness(0) invert(1);
 }
 
 .table-icon--check {
-  background-color: red;
+  background-color: rgb(204, 43, 36);
 }
 
 .table-icon--cross {
@@ -2459,32 +2480,30 @@ p {
 .columns__team {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
   gap: 80px;
   margin-top: 60px;
 }
 @media (max-width: 450px) {
   .columns__team {
     flex-direction: column;
+    align-items: center;
     gap: 12px;
     margin: 0;
   }
 }
 
-.column__team {
-  display: flex;
-  flex-direction: column;
-}
 .column__team:first-child {
-  max-width: 200px;
+  max-width: 187px;
 }
 .column__team:nth-child(2) {
   max-width: 257px;
 }
 .column__team:nth-child(3) {
-  max-width: 257px;
+  max-width: 325px;
 }
 .column__team:last-child {
-  max-width: 325px;
+  max-width: 267px;
 }
 @media (max-width: 450px) {
   .column__team:first-child, .column__team:nth-child(2), .column__team:nth-child(3), .column__team:last-child {
